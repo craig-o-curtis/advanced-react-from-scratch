@@ -1,0 +1,42 @@
+{
+  "name": "advanced-react-scratch",
+  "version": "1.0.0",
+  "main": "lib/server.js",
+  "author": "Craig O. Curtis",
+  "license": "MIT",
+  "scripts": {
+    "start": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "logs": "pm2 logs",
+    "stop": "pm2 stop lib/server.js",
+    "restart": "pm2 restart lib/server.js",
+    "webpack": "webpack -wd"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-react": "^7.11.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "7",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pm2": "^3.2.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "webpack": "^4.26.0"
+  }
+}
