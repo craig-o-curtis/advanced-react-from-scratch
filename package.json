@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "start": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "starting": "pm2 start lib/server.js -i max --watch --interpreter babel-node",
     "logs": "pm2 logs",
-    "stop": "pm2 stop lib/server.js",
+    "stop": "pm2 stop lib/server.js && npx kill-port 8080",
     "restart": "pm2 restart lib/server.js",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
     "presets": [
@@ -22,6 +24,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
