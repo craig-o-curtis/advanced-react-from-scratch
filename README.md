@@ -16,6 +16,7 @@ webpack
 babel-loader@7
 babel-polyfill
 jest
+react-test-renderer
 
 // yarn scripts
 yarn start
