@@ -1,38 +1,66 @@
-// Start Server
+// Starting the project
+In Terminal 1:
+```bash
+$ yarn
+$ yarn start
+$ yarn logs
+```
+In Terminal 2:
+```bash
+$ yarn webpack
+```
+In Terminal 3:
+```bash
+$ yarn test
+```
 
+// Start Server
+```bash
 node lib/server.js
+```
 or 
+```bash
 yarn dev
+```
 
 // check logs
-yarn pm2 logs
+```bash
+$ yarn pm2 logs
+```
 
-// packages
-ejs - for templating
-pm2 - for zero downtime
-react
-react-dom
-webpack
-babel-loader@7
-babel-polyfill
-jest
-react-test-renderer
+// npm packages
+* ejs - for templating
+* pm2 - for zero downtime
+* react
+* react-dom
+* webpack
+* babel-loader@7
+* babel-polyfill
+* jest
+* react-test-renderer
 
 // yarn scripts
-yarn start
-yarn stop
-yarn restart
-yarn webpack
-time yarn webpack
+```bash
+$ yarn start
+$ yarn stop
+$ yarn restart
+$ yarn webpack
+$ time yarn webpack
+```
 
 // Tips
 Get api endpoint data and store it locally:
   Linux:
+```bash
 $ wget -O lib/testData.json https://gist.githubusercontent.com/samerbuna/5b53056342720b79ab19fc75629a9c8f/raw/f80d3d219d5913e0b36af1fcbb79c8721666fd49/react-blog-mockup-data.json
+```
   Mac:
+```bash
 $ curl https://gist.githubusercontent.com/samerbuna/5b53056342720b79ab19fc75629a9c8f/raw/f80d3d219d5913e0b36af1fcbb79c8721666fd49/react-blog-mockup-data.json -o lib/testData.json
+```
 
 Mapping an Array into an Object with Reduce:
+```js
   input -- Object.articles:
   {
     articles: [{id: 1, name: 'Guy'}, {id: 2, name: 'Dude'}]
@@ -51,9 +79,27 @@ Mapping an Array into an Object with Reduce:
     1: {id:1,name:'Guy'},
     2: {id:2,name:'Dude'},
   }
+```
 
+// Git tips
+Abbreviated Git history:
+```bash
+$ git log --decorate --abbrev-commit
+```
 
+Find where a file was used:
+```bash
+$ git grep serverRender
+```
 
-undefined: test: 2__proto__: Object__proto__: Object
-var arr = [{test: 1, id: 'a'}, {test: 2, id: 'b'}]
+// Node / npm tips:
+Easy relative paths 
+-- package.json:
+```json
+{
+  "scripts": {
+    "start" "NODE_PATH=./lib..."
+  }
+}
+```
 

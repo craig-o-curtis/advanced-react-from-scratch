@@ -9,7 +9,9 @@
 </head>
 
 <body>
-  <div id="root">Loading...</div>
+  <!-- initialContent prepared by endpoint -->
+  <!-- NOTE - don't use spaces below so react doesn't diff, looks at single HTML element string -->
+  <div id="root"><%- initialContent -%></div>
 
   <script src="/bundle.js" charset="utf-8"></script>
 </body>

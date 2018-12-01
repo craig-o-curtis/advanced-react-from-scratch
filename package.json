@@ -5,10 +5,11 @@
   "author": "Craig O. Curtis",
   "license": "MIT",
   "scripts": {
-    "start": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "start": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
     "starting": "pm2 start lib/server.js -i max --watch --interpreter babel-node",
     "logs": "pm2 logs",
     "stop": "pm2 stop lib/server.js && npx kill-port 8080",
+    "delete": "pm2 delete server",
     "restart": "pm2 restart lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
