@@ -1,102 +1,182 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleList renders correctly 1`] = `
-<div>
-  <div
-    style={
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleList
+    articles={
       Object {
-        "borderBottomColor": "#aaa",
-        "borderBottomStyle": "solid",
-        "borderBottomWidth": 1,
-        "marginBottom": 10,
-        "paddingBottom": 10,
+        "a": Object {
+          "body": "body",
+          "date": "date",
+          "id": "a",
+          "title": "title",
+        },
+        "b": Object {
+          "body": "body",
+          "date": "date",
+          "id": "b",
+          "title": "title",
+        },
       }
     }
-  >
-    <h4
-      style={
-        Object {
-          "fontWeight": "bold",
-        }
-      }
-    />
-    <p
-      style={
-        Object {
-          "color": "#888",
-          "fontSize": "0.8rem",
-        }
-      }
-    >
-      2018-12-01
-    </p>
-    <p
-      style={
-        Object {
-          "paddingLeft": 20,
-        }
-      }
-    />
-    <a
-      rel="noopener noreferrer"
-      style={
-        Object {
-          "paddingBottom": 20,
-          "paddingTop": 10,
-        }
-      }
-      target="_blank"
-    >
-       
-    </a>
-  </div>
-  <div
-    style={
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Article
+          article={
+            Object {
+              "body": "body",
+              "date": "date",
+              "id": "a",
+              "title": "title",
+            }
+          }
+        />,
+        <Article
+          article={
+            Object {
+              "body": "body",
+              "date": "date",
+              "id": "b",
+              "title": "title",
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
       Object {
-        "borderBottomColor": "#aaa",
-        "borderBottomStyle": "solid",
-        "borderBottomWidth": 1,
-        "marginBottom": 10,
-        "paddingBottom": 10,
-      }
-    }
-  >
-    <h4
-      style={
+        "instance": null,
+        "key": "a",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "body": "body",
+            "date": "date",
+            "id": "a",
+            "title": "title",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "b",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "body": "body",
+            "date": "date",
+            "id": "b",
+            "title": "title",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Article
+            article={
+              Object {
+                "body": "body",
+                "date": "date",
+                "id": "a",
+                "title": "title",
+              }
+            }
+          />,
+          <Article
+            article={
+              Object {
+                "body": "body",
+                "date": "date",
+                "id": "b",
+                "title": "title",
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
-          "fontWeight": "bold",
-        }
-      }
-    />
-    <p
-      style={
+          "instance": null,
+          "key": "a",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "body": "body",
+              "date": "date",
+              "id": "a",
+              "title": "title",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
-          "color": "#888",
-          "fontSize": "0.8rem",
-        }
-      }
-    >
-      2018-12-01
-    </p>
-    <p
-      style={
-        Object {
-          "paddingLeft": 20,
-        }
-      }
-    />
-    <a
-      rel="noopener noreferrer"
-      style={
-        Object {
-          "paddingBottom": 20,
-          "paddingTop": 10,
-        }
-      }
-      target="_blank"
-    >
-       
-    </a>
-  </div>
-</div>
+          "instance": null,
+          "key": "b",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "body": "body",
+              "date": "date",
+              "id": "b",
+              "title": "title",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;

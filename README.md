@@ -40,6 +40,8 @@ $ yarn pm2 logs
 * react-test-renderer
 * axios
 * prop-types
+* enzyme
+* enzyme-adapter-react-16
 
 // yarn scripts
 ```bash
