@@ -39,6 +39,7 @@ $ yarn pm2 logs
 * jest
 * react-test-renderer
 * axios
+* prop-types
 
 // yarn scripts
 ```bash
