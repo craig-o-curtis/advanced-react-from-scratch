@@ -6,12 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Advanced React from Scratch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    // expose initial data to client as global on window
+    window.initialData = <%- JSON.stringify(initialData) -%>;
+  </script>
 </head>
 
 <body>
   <!-- initialContent prepared by endpoint -->
   <!-- NOTE - don't use spaces below so react doesn't diff, looks at single HTML element string -->
-  <div id="root"><%- initialContent -%></div>
+  <div id="root"><%- initialMarkup -%></div>
 
   <script src="/bundle.js" charset="utf-8"></script>
 </body>

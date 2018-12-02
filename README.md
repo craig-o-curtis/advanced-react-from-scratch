@@ -38,6 +38,7 @@ $ yarn pm2 logs
 * babel-polyfill
 * jest
 * react-test-renderer
+* axios
 
 // yarn scripts
 ```bash
