@@ -42,6 +42,8 @@ $ yarn pm2 logs
 * prop-types
 * enzyme
 * enzyme-adapter-react-16
+* lodash.debounce // can yarn add specific lodash functions
+* lodash.pickby
 
 // yarn scripts
 ```bash
@@ -50,6 +52,11 @@ $ yarn stop
 $ yarn restart
 $ yarn webpack
 $ time yarn webpack
+```
+
+// Checking for packages to upgrade
+```bash
+$ yarn upgrade-interactive
 ```
 
 // Tips
